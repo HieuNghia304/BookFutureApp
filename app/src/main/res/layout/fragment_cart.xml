@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_main"
+    android:id="@+id/frm_cart"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtxTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Giỏ Hàng"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/typeBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/total"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="-54dp"
+        android:background="@drawable/edit_bottom_menu_main"
+        android:padding="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_title"
+            tools:ignore="UnknownIdInLayout">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2Cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </androidx.viewpager2.widget.ViewPager2>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/total"
+        android:layout_width="415dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="55dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="170dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:text="Tổng Tiền"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textTotalMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="65.000"
+                android:textColor="#FF0303"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="Đ"
+                android:textColor="#FF0303"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textTotalMoney"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/payment"
+            android:layout_width="150dp"
+            android:layout_height="68dp"
+            android:layout_marginLeft="80sp"
+            android:layout_marginTop="7dp"
+            android:backgroundTint="#0A8F6A"
+            android:text="Thanh Toán"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

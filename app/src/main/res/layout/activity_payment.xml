@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="868dp"
+    android:background="@drawable/background_main"
+    tools:context=".Manage.PaymentActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Thông tin thanh toán"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="720dp"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edit_bottom_menu_main">
+
+        <TextView
+            android:id="@+id/tvTrans"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="PHƯƠNG THỨC VẬN CHUYỂN"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/rgTrans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="20dp">
+
+            <RadioButton
+                android:id="@+id/Phuongthucgiaohang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FE9620"
+                android:checked="true"
+                android:text="Giao hàng tiêu chuẩn 18.000 VNĐ"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+
+            <RadioButton
+                android:id="@+id/Freeship"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:buttonTint="#FE9620"
+                android:text="Miễn phí ship cho đơn 30k"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+        </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_view4"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="20dp"
+        android:text="PHƯƠNG THỨC THANH TOÁN"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/rgPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="348dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbZaloPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:buttonTint="#FE9620"
+            android:drawableLeft="@drawable/ic_zalopay_payment_3"
+            android:text=" Ví ZaloPay"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbMomo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FE9620"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@drawable/ic_momo_payment_2"
+            android:text=" Ví Momo"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FE9620"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@drawable/ic_cash_payment_1"
+            android:text="Thanh toán khi nhận hàng"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="410dp"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="78dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:text="Tổng Tiền"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:gravity="left"
+            />
+
+        <TextView
+            android:id="@+id/textTotalMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="65.000 "
+            android:textColor="#FF0303"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginBottom="10dp"
+            android:text="Đ"
+            android:textColor="#FF0303"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+           />
+
+        <Button
+            android:id="@+id/btnPayment"
+            android:layout_width="130dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="100sp"
+            android:layout_marginRight="12dp"
+            android:backgroundTint="#0A8F6A"
+            android:text="Đặt Hàng"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

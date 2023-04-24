@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".Manage.PaydoneActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Thanh toán"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="720dp"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edit_bottom_menu_main">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="140dp"
+            android:src="@drawable/ic_tick"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+       android:textColor="#FD9329"
+        android:layout_marginTop="260dp"
+        android:text="CÁM ƠN BẠN ĐÃ MUA HÀNG"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:textColor="#000000"
+        android:layout_marginTop="310dp"
+        android:text="Sự hài lòng của Quý Khách"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:textColor="#000000"
+        android:layout_marginTop="335dp"
+        android:text="Chính là niềm tự hào của chúng tôi"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textColor="#000000"
+        android:layout_marginTop="390dp"
+        android:text="Đơn hàng này sẽ được chuyến đến tay bạn trong"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:textColor="#000000"
+        android:layout_marginTop="418dp"
+        android:text="thời gian sớm nhất"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnContinuePay"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="490dp"
+        android:text="Tiếp tục mua hàng"
+        android:textStyle="bold"
+        android:backgroundTint="@color/text_green"
+        />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="570dp"
+        android:text="Chi tiết đơn hàng"
+        android:textColor="@color/text_green"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:textColor="#D6D6D6"
+        android:layout_marginTop="658dp"
+        android:text="Bạn cần hỗ trợ, vui lòng liên hệ"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:textColor="@color/text_green"
+        android:layout_marginTop="680dp"
+        android:text="111.112.113.114"
+        android:textSize="17dp" />
+</RelativeLayout>
